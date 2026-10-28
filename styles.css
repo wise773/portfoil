@@ -181,11 +181,18 @@ nav ul a:hover::after {
 }
 
 .page-header {
-    background: rgba(8, 8, 8, 0.9);
+    background: linear-gradient(rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.8)), url('imges/background.jpeg');
+    background-size: cover;
+    background-position: center;
+    border-bottom: 1px solid var(--line);
 }
 
 .compact-header {
     min-height: auto;
+}
+
+.about-page {
+    padding-top: 90px;
 }
 
 .section-title {
@@ -521,20 +528,32 @@ nav ul a:hover::after {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    min-width: 110px;
-    padding: 0.7rem 1rem;
+    gap: 0.6rem;
+    min-width: 130px;
+    padding: 0.75rem 1rem;
     border: 1px solid var(--line);
     border-radius: 999px;
     color: var(--text);
     text-decoration: none;
     background: rgba(255, 255, 255, 0.02);
     transition: all 0.2s ease;
+    font-weight: 500;
+}
+
+.social-links a i {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.1rem;
+    font-size: 1rem;
+    color: var(--accent);
 }
 
 .social-links a:hover {
     border-color: rgba(255, 0, 79, 0.7);
     background: var(--accent-soft);
     transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(255, 0, 79, 0.12);
 }
 
 .copyright {
